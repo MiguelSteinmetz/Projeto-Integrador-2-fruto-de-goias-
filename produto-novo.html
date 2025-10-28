@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novo Produto • Frutos Goiás</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div></div>
+    <div class="topbar__lado-dir">
+      <a class="btn ghost" href="produtos.html">Voltar</a>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <h2 style="margin:0 0 18px; font-size:28px; font-weight:800; color:var(--prim)">Cadastro do produto</h2>
+
+    <form class="form-grid" action="produtos.html">
+      <label>Nome Produto
+        <input class="input" placeholder="Nome Produto" required>
+      </label>
+
+      <div class="duo">
+        <label>Custo
+          <input class="input" placeholder="00,00" inputmode="numeric">
+        </label>
+        <label>Valor
+          <input class="input" placeholder="00,00" inputmode="numeric">
+        </label>
+      </div>
+
+      <label>Código Produto
+        <input class="input" placeholder="Código">
+      </label>
+
+      <label>Quantidade
+        <input class="input" placeholder="000" inputmode="numeric">
+      </label>
+
+      <div style="display:flex; justify-content:center; margin-top:6px">
+        <button class="btn" type="submit">Salvar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
