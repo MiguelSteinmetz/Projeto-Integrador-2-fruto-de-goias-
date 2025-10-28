@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abrir Caixa • Frutos Goiás</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div></div>
+    <div class="topbar__lado-dir">
+      <a class="btn ghost" href="menu.html">Voltar</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar">
+      <div class="logo-min">
+        <img src="/assets/logo-Photoroom.png" alt="Frutos Goiás">
+        <div>
+          <div style="font-weight:800">FRUTOS</div>
+          <div style="color:#cdd3dd">GOIÁS</div>
+        </div>
+      </div>
+
+      <div class="menu-l">
+        <div class="menu-item atual"><span class="sq">✓</span> BALCÃO</div>
+        <a class="menu-item" href="menu.html"><span class="sq" style="background:#ff6b6b;color:#111;">×</span> Fechar Caixa</a>
+      </div>
+    </div>
+
+    <div class="area">
+      <div class="header-area">
+        <div class="busca">
+          <input class="input" placeholder="Digite o ID do produto">
+        </div>
+        <div class="row">
+          <a class="btn outline" href="produtos.html">Produtos</a>
+          <a class="btn ghost" href="menu.html">Voltar</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <table class="tabela">
+          <thead>
+          <tr>
+            <th>ID</th><th>NOME PRODUTO</th><th>VALOR UNID.</th><th>QUANTIDADE</th><th>VALOR TOTAL</th><th>OBSERVAÇÃO</th><th style="text-align:right">AÇÕES</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td><td>Picolé de morango</td><td>R$12,00</td><td>3x</td><td>R$36,00</td><td></td>
+            <td class="acoes">
+              <div class="acao-ic" title="Editar">✎</div>
+              <div class="acao-ic bad" title="Remover">✖</div>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td><td>Picolé de morango</td><td>R$12,00</td><td>3x</td><td>R$36,00</td><td></td>
+            <td class="acoes"><div class="acao-ic">✎</div><div class="acao-ic bad">✖</div></td>
+          </tr>
+          <tr>
+            <td>1</td><td>Picolé de morango</td><td>R$12,00</td><td>3x</td><td>R$36,00</td><td></td>
+            <td class="acoes"><div class="acao-ic">✎</div><div class="acao-ic bad">✖</div></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="footer-caixa">
+        <div class="bloco-total">
+          <span style="color:#a6abb5">VALOR A TOTAL</span>
+          <span style="opacity:.35">|</span>
+          <span class="total-tag">R$150,00</span>
+        </div>
+
+        <div class="row">
+          <a class="btn ok" href="pagamento.html">Pagar</a>
+          <a class="btn bad outline" href="#">Deletar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
