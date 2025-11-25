@@ -1,0 +1,50 @@
+.tela-dashboard { min-height: 100vh; background: var(--bg); }
+.grid-acoes {
+  width: min(1100px, 92vw);
+  margin: 12vh auto; 
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 64px;
+  place-items: center;
+}
+.acao {
+  width: min(460px, 82vw); height: 170px; padding: 22px 30px;
+  background: #3b3d40; border-radius: 20px; border: 3px solid var(--borda);
+  box-shadow: var(--shadow); display: flex; align-items: center; gap: 24px;
+  text-decoration: none; color: inherit; transition: transform .1s;
+}
+
+.acao:hover { transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.35); 
+}
+
+.titulo { font-size: 28px; 
+  letter-spacing: 3px; 
+  font-weight: 800; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,63 @@
+/* —— Tipografia, Variáveis e Reset ——————————————————————————————— */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --bg: #151719;
+  --bg-2: #1e2024;
+  --card: #3b3d40;
+  --texto: #EAECEF;
+  --borda: #f29f3f;
+  --prim: #f29f3f;
+  --ok: #37b24d;
+  --bad: #ff6b6b;
+  --shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; font-family: Inter, sans-serif;
+  background: var(--bg); color: var(--texto);
+}
+
+/* —— Utilitários e Acessibilidade ———————————————————————————————— */
+.container { width: min(1200px, 92vw); margin-inline: auto; }
+.row { display: flex;
+   gap: 24px; }
+   
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* —— Componentes Globais (Botões e Inputs) ——————————————————————— */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: .6rem; min-width: 120px; padding: .8rem 1.2rem;
+  border-radius: 999px; border: 2px solid transparent; cursor: pointer;
+  background: var(--prim); color: #1b1b1b; font-weight: 800; text-decoration: none;
+  box-shadow: 0 6px 0 #d97b16, 0 14px 24px rgba(0,0,0,.25);
+  transition: transform .06s ease, box-shadow .2s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(1px); }
+.btn.outline { background: transparent; color: var(--texto); border-color: var(--prim); box-shadow: none; }
+.btn.ghost { background: #2a2c2f; color: var(--texto); border-color: #2a2c2f; box-shadow: none; }
+.btn.ok { background: var(--ok); box-shadow: 0 6px 0 #2e923f, 0 14px 24px rgba(0,0,0,.25); }
+.btn.bad { background: var(--bad); box-shadow: none; }
+
+.input {
+  width: 100%; height: 42px; padding: 0 .9rem; border-radius: 8px;
+  border: 2px solid #4a4d52; background: #222428; color: var(--texto);
+  outline: none; transition: border .2s;
+}
+.input:focus { border-color: #3fbf6b; }
+.input.big { height: 48px; font-size: 18px; }
+
+/* —— Topbar (Usada em quase todas as telas internas) —————————————— */
+.topbar {
+  position: sticky; top: 0; z-index: 10; height: 56px;
+  background: #2a2c2f; box-shadow: 0 2px 0 rgba(0,0,0,.35);
+  display: flex; align-items: center; justify-content: space-between; padding: 0 16px;
+}
+.ladodir { display: flex; align-items: center; gap: 10px; }

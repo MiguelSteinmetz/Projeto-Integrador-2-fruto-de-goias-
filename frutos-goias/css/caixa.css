@@ -1,0 +1,121 @@
+/* Layout com Sidebar */
+.layout { min-height: calc(100vh - 56px); display: grid; grid-template-columns: 260px 1fr; }
+.sidebar { background: #2a2c2f; padding: 20px 16px; border-right: 2px solid #232528; }
+.area { padding: 22px; background: linear-gradient(180deg,#1b1d20,#191b1e); }
+
+/* Sidebar Elementos */
+.logo { display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px; 
+}
+.logo img { width: 70px; }
+.menu-l { display: grid;
+  gap: 10px;
+  margin-top: 12px; 
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #34363a;
+  color: #dbdee4;
+  border: 2px solid #34363a;
+  text-decoration: none;
+}
+.menu-item.atual { background: #39423a;
+  border-color: #59ba72; 
+}
+.menu-item .sq { width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: #59ba72;
+  display: grid;
+  place-items: center;
+  color: #111;
+  font-weight: 900; 
+}
+
+/* Tabelas e Cards */
+.header-area { display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  margin-bottom: 14px; 
+}
+
+.card { background: #3b3d40;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+  border: 2px solid #4a4d52; 
+}
+
+.tabela { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
+.tabela thead th { text-align: left; font-size: .9rem; color: #cdd3dd; padding: 10px 14px; }
+.tabela tbody tr { background: #25282c; border-radius: 9px; }
+.tabela tbody td { padding: 12px 14px; border-top: 1px solid #3b3f44; border-bottom: 1px solid #3b3f44; }
+.tabela tbody tr td:first-child { border-left: 1px solid #3b3f44; border-radius: 9px 0 0 9px; }
+.tabela tbody tr td:last-child { border-right: 1px solid #3b3f44;border-radius: 0 9px 9px 0; }
+
+.acoes { display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.acao-ic { width: 28px; 
+  height: 28px;
+  border-radius: 7px;
+  display: grid;
+  place-items: center;
+  background: #3b3d40;
+  border: 2px solid var(--borda);
+  cursor: pointer; 
+}
+
+.acao-ic.bad { border-color: var(--bad);
+  color: var(--bad); 
+}
+
+/* Footer do Caixa */
+.footer-caixa { display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px; 
+}
+.bloco-total { display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #1a1c1f;
+  border: 2px solid #34363a;
+  border-radius: 12px;
+  padding: 10px 14px; 
+}
+
+.total-tag { background: #203c26;
+  color: #7be495;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  font-weight: 800; 
+}
+
+/* Formulário de Cadastro */
+.form-card { width: min(720px, 92vw); 
+  margin: 7vh auto;
+  background: #3b3d40;
+  border-radius: 14px;
+  padding: 28px;
+  border: 2px solid #4a4d52; 
+}
+
+.form-grid { display: grid;
+   gap: 14px; 
+}
+
+.duo { display: grid;
+   grid-template-columns: 1fr 1fr;
+    gap: 12px; 
+}
+

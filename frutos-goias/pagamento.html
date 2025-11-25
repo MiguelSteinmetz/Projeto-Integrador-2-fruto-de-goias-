@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pagamento • Frutos Goiás</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/pagamento.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div></div>
+    <div class="ladodir">
+      <a class="btn ghost" href="abrir-caixa.html">Voltar</a>
+    </div>
+  </div>
+
+  <div class="pag-wrap container">
+    <div class="card pag-grid">
+      <div>
+        <div class="linha-pag">
+          <input class="input big" placeholder="Dinheiro">
+          <div class="btn-add">+</div>
+        </div>
+        <div class="linha-pag">
+          <input class="input big" placeholder="Crédito">
+          <div class="btn-add">+</div>
+        </div>
+        <div class="linha-pag">
+          <input class="input big" placeholder="Débito">
+          <div class="btn-add">+</div>
+        </div>
+        <div class="linha-pag">
+          <input class="input big" placeholder="Pix">
+          <div class="btn-add">+</div>
+        </div>
+
+        <div class="big-pay">
+          <a class="btn ok" href="#" id="btn-finalizar-pag">Pagar</a>
+        </div>
+      </div>
+
+      <div class="boxPagamento">
+        <div class="pill"><strong>Subtotal</strong><span class="total-tag" id="total-subtotal">R$0,00</span></div>
+        <div class="pill"><strong>Total</strong><span class="total-tag" id="total-final">R$0,00</span></div>
+        <div class="pill"><strong>Diferença</strong><span class="total-tag" id="total-diferenca">R$0,00</span></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/caixa.js"></script>
+</body>
+</html>

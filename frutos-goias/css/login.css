@@ -1,0 +1,24 @@
+.tela-login { position: relative; min-height: 100vh; overflow: hidden; }
+.fundo {
+  position: absolute; inset: 0;
+  background: radial-gradient(transparent, rgba(0,0,0,.45) 55%), url('/assets/image.png') center/cover no-repeat fixed;
+  filter: blur(1px) saturate(110%); transform: scale(1.02);
+}
+.colmeia {
+  position: absolute; inset: 0 40% 0 0; pointer-events: none;
+  background: rgba(242, 159, 63, 0.05); 
+}
+.cartao-login {
+  position: relative; margin-left: auto; margin-right: 6vw; z-index: 2;
+  width: min(420px, 85vw); padding: 38px 34px 30px; border-radius: 16px;
+  background: linear-gradient(180deg,#3b3d40,#2f3135);
+  box-shadow: var(--shadow); top: 50%; transform: translateY(-50%);
+}
+.logo { display: grid; place-items: center; margin-bottom: 12px; }
+.logo img { width: 180px; height: auto; filter: drop-shadow(0 10px 18px rgba(0,0,0,.35)); }
+.titulo-login {
+  margin: 10px 0 18px; font-size: 28px; font-weight: 800; text-align: center;
+  border-bottom: 3px solid #4e5156; padding-bottom: 14px;
+}
+.form-login { display: grid; gap: 12px; }
+.form-login .btn { margin-top: 6px; }
